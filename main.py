@@ -1,9 +1,9 @@
-import os
-from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+from src.constants.ai import GPT_MODEL
+from src.core.config import OPENAI_API_KEY
+
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 def chat_with_gpt():
@@ -14,7 +14,7 @@ def chat_with_gpt():
             break
 
         response = client.chat.completions.create(
-            model='gpt-4.1-mini',
+            model=GPT_MODEL,
             messages=[
                 {'role': 'system', 'content': 'You are a 2k players stats helper.'
                                               'use https://www.2kratings.com/ as your source for attributes, stats,'
