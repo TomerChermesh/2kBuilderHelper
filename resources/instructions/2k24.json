@@ -1,0 +1,1756 @@
+{
+	"Vitals": {
+		"sources": ["https://www.nba.com/player", "https://www.espn.com/nba/player", "https://en.wikipedia.org/wiki/{first name}_{last name}", "Google Search"],
+		"comments": "",
+		"params": {
+			"First Name": {
+				"type": "String",
+				"range": "",
+				"comments": ""
+				},
+			"Last Name": {
+				"type": "String",
+				"range": "",
+				"comments": ""
+				},
+			"Nickname": {
+				"type": "Selection",
+				"range": "All 2k possible nicknames or None",
+				"comments": "Try bring the real player's nickname or leave it as None"
+				},
+			"Position": {
+				"type": "Selection",
+				"range": "PG/SG/SF/PF/C",
+				"comments": "Primary player's position"
+				},
+			"Secondary Position": {
+				"type": "Selection",
+				"range": "PG/SG/SF/PF/C/None",
+				"comments": "Secondary player's position - Must be different from the Primary, also can be None"
+				},
+			"College": {
+				"type": "Selection",
+				"range": "All US colleges or some countries around the world",
+				"comments": "College first if exist, if played abroad, set the country name"
+				},
+			"Qualifies for World Team": {
+				"type": "Boolean",
+				"range": "Yes/No",
+				"comments": "Is the player called-up for his national team?"
+				},
+			"Birth Month": {
+				"type": "Selection",
+				"range": "January/February/March/April/May/June/July/August/September/October/November/December",
+				"comments": "Player's real birth month"
+				},
+			"Birth Day": {
+				"type": "Integer",
+				"range": "1-31",
+				"comments": "Player's real birth day (some months have less than 31)"
+				},
+			"Age (Start of 1st Season)": {
+				"type": "Integer",
+				"range": "19-40",
+				"comments": "Player's age when coming to the NBA"
+				},
+			"Jersey Number": {
+				"type": "Integer",
+				"range": "0-99, 00",
+				"comments": ""
+				},
+			"Dominant Hand": {
+				"type": "Boolean",
+				"range": "Right/Left",
+				"comments": ""
+				},
+			"Dominant Dunk Hand": {
+				"type": "Boolean",
+				"range": "Right/Left",
+				"comments": ""
+				},
+			"Years Pro": {
+				"type": "Integer",
+				"range": "0-3",
+				"comments": "How many years did the player have already played in the NBA so far"
+				},
+			"Peak Start Age": {
+				"type": "Integer",
+				"range": "19-33",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Peak End Age": {
+				"type": "Integer",
+				"range": "27-41",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Potential": {
+				"type": "Integer",
+				"range": "25-99",
+				"comments": "Can be found in the player page on 2kratings.com"
+				},
+			"Min Potential": {
+				"type": "Integer",
+				"range": "50-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Max Potential": {
+				"type": "Integer",
+				"range": "Min Potential-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Bust Percent": {
+				"type": "Integer",
+				"range": "0-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Avg Percent": {
+				"type": "Integer",
+				"range": "0-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Boom Percent": {
+				"type": "Integer",
+				"range": "0-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Play For Winner": {
+				"type": "Integer",
+				"range": "0-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Financial Security": {
+				"type": "Integer",
+				"range": "0-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Loyalty": {
+				"type": "Integer",
+				"range": "0-99",
+				"comments": "If this parameter cannot be found - Generate reasonably"
+				},
+			"Force Non-Starter": {
+				"type": "Boolean",
+				"range": "On/Off",
+				"comments": ""
+				},
+			"Play Initiator": {
+				"type": "Boolean",
+				"range": "Yes/No",
+				"comments": ""
+				},
+			"Play Type 1": {
+				"type": "Selection",
+				"range": "None/Isolation/Isolation Point/Isolation Wing/P&R Ball Handler/P&R Point/P&R Wing/P&R Roll Man/Post Up Low/Post Up High/Guard Post Up/Cutter/Handoff Receiver/Handoff Passer/Mid Range/3PT",
+				"comments": "Player's primary play type"
+				},
+			"Play Type 2": {
+				"type": "Selection",
+				"range": "None/Isolation/Isolation Point/Isolation Wing/P&R Ball Handler/P&R Point/P&R Wing/P&R Roll Man/Post Up Low/Post Up High/Guard Post Up/Cutter/Handoff Receiver/Handoff Passer/Mid Range/3PT",
+				"comments": "Player's secondary play type - Must be different from 1"
+				},
+			"Play Type 3": {
+				"type": "Selection",
+				"range": "None/Isolation/Isolation Point/Isolation Wing/P&R Ball Handler/P&R Point/P&R Wing/P&R Roll Man/Post Up Low/Post Up High/Guard Post Up/Cutter/Handoff Receiver/Handoff Passer/Mid Range/3PT",
+				"comments": "Player's third play type - Must be different from 1 and 2"
+				},
+			"Play Type 4": {
+				"type": "Selection",
+				"range": "None/Isolation/Isolation Point/Isolation Wing/P&R Ball Handler/P&R Point/P&R Wing/P&R Roll Man/Post Up Low/Post Up High/Guard Post Up/Cutter/Handoff Receiver/Handoff Passer/Mid Range/3PT",
+				"comments": "Player's third play type - Must be different from 1,2 and 3"
+				}
+			}
+		},
+	"Body": {
+		"sources": ["https://www.nba.com/player", "https://www.espn.com/nba/player", "https://en.wikipedia.org/wiki/{first name}_{last name}", "Google Search"],
+		"comments": "",
+		"params": {
+			"Height": {
+				"type": "String",
+				"range": "5'4-7'5",
+				"comments": "In Feet'Inch"
+				},
+			"Weight": {
+				"type": "String",
+				"range": "115-350 LBS",
+				"comments": "In LBS"
+				},
+			"Wingspan": {
+				"type": "Integer",
+				"range": "0-100",
+				"comments": "Try to set reasonable value according to the real player's Wingspan and other 2k players as reference"
+				},
+			"Shoulder Width": {
+				"type": "Integer",
+				"range": "0-100",
+				"comments": "Try to set reasonable value according to the real player's Shoulder Width and other 2k players as reference"
+				}
+			}
+		},
+	"Shoe/Gear": {
+		"sources": ["Google Search"],
+		"comments": "",
+		"params": {
+			"Shoe Home": {
+				"type": "Selection",
+				"range": "",
+				"comments": "All 2k possible shoes, if struggling - set brand and general shoe model"
+				},
+			"Shoe Away": {
+				"type": "Selection",
+				"range": "",
+				"comments": "All 2k possible shoes, if struggling - set brand and general shoe model"
+				},
+			"Sock Length Home": {
+				"type": "Selection",
+				"range": "No Socks/Quarter/Crew/Crew Scrunch/Tall/Tall Scrunch/Tall Squash/Striped Long/Striped Crew/Striped Crew Scrunch/Striped Long Scrunch/Striped Long Squash/Striped Quarter",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his socks preferences"
+				},
+			"Sock Length Away": {
+				"type": "Selection",
+				"range": "No Socks/Quarter/Crew/Crew Scrunch/Tall/Tall Scrunch/Tall Squash/Striped Long/Striped Crew/Striped Crew Scrunch/Striped Long Scrunch/Striped Long Squash/Striped Quarter",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Socks preferences"
+				},
+			"Undershirt": {
+				"type": "Selection",
+				"range": "None/Shortsleeve/Longsleeve",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Undershirt preferences"
+				},
+			"Undershirt Home Color": {
+				"type": "Selection",
+				"range": "White/Black/Uniform Color 1/Uniform Color 2/Uniform Color 3/Arm Sleeve Color/Leg Sleeve Color",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Undershirt colors preferences"
+				},
+			"Undershirt Away Color": {
+				"type": "Selection",
+				"range": "White/Black/Uniform Color 1/Uniform Color 2/Uniform Color 3/Arm Sleeve Color/Leg Sleeve Color",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Undershirt colors preferences"
+				},
+			"Shorts": {
+				"type": "Selection",
+				"range": "None/Compression Shorts/Compression Pants",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Shorts preferences"
+				},
+			"Shorts Preferred Type": {
+				"type": "Selection",
+				"range": "No/Short/Long/Folded",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Shorts Preferred Type preferences"
+				},
+			"Shorts Length": {
+				"type": "Integer",
+				"range": "0-10",
+				"comments": "Try bring real value, if struggling - try using Google Image search of the player to see his Shorts Length preferences"
+			}
+		}
+	},
+	"Accessories": {
+		"sources": [],
+		"comments": "You can only mention 'active' accessories which are not None. If there is a relevant item - Please mention its Home/Away colors",
+		"params": {
+			"Upper Body Accessories": {
+				"Headband": {
+					"type": "Selection",
+					"range": "None/Headband/Headband 2",
+					"comments": ""
+					},
+				"Headband Logo": {
+					"type": "Selection",
+					"range": "No Logo/Front/Front Right/Right/Back/Left/Front Left",
+					"comments": "Relevant only if 'Headband' is not None"
+					},
+				"Headband Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Arm": {
+					"type": "Selection",
+					"range": "None/Sleeve/Padded Sleeve/Forearm Sleeve/Short Shoulder/Long Shoulder/Angular Sleeve/Folded Arm Sleeve",
+					"comments": "Mention if the selected item is unbranded/Jordan/Nike, and if the logo is Black/White"
+					},
+				"Left Arm Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Elbow": {
+					"type": "Selection",
+					"range": "None/Pad/Sleeve/Small Band/Medium Band/High Band/Forearm Band",
+					"comments": ""
+					},
+				"Left Elbow Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Wrist": {
+					"type": "Selection",
+					"range": "None/Forearm Band/Short Wrist Band/Long Wrist Band/Cloth/Robberband/Double Rubber Wristband/Rubber Wristband/Wrist Tape/Low Band/Hand Wrap",
+					"comments": ""
+					},
+				"Left Wrist Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Fingers": {
+					"type": "Selection",
+					"range": "None/Index Finger/Middle Finger/Ring Finger/Pinky Finger/Hand Wrap/Index and Middle/Middle and Ring/Ring and Pinky/Index and Ring",
+					"comments": ""
+					},
+				"Left Fingers Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Arm": {
+					"type": "Selection",
+					"range": "None/Sleeve/Padded Sleeve/Forearm Sleeve/Short Shoulder/Long Shoulder/Angular Sleeve/Folded Arm Sleeve",
+					"comments": "Mention if the selected item is unbranded/Jordan/Nike, and if the logo is Black/White"
+					},
+				"Right Arm Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Elbow": {
+					"type": "Selection",
+					"range": "None/Pad/Sleeve/Small Band/Medium Band/High Band/Forearm Band",
+					"comments": ""
+					},
+				"Right Elbow Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Wrist": {
+					"type": "Selection",
+					"range": "None/Forearm Band/Short Wrist Band/Long Wrist Band/Cloth/Robberband/Double Rubber Wristband/Rubber Wristband/Wrist Tape/Low Band/Hand Wrap",
+					"comments": ""
+					},
+				"Right Wrist Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Fingers": {
+					"type": "Selection",
+					"range": "None/Index Finger/Middle Finger/Ring Finger/Pinky Finger/Hand Wrap/Index and Middle/Middle and Ring/Ring and Pinky/Index and Ring",
+					"comments": ""
+					},
+				"Right Fingers Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					}
+				},
+			"Lower Body Accessories": {
+				"Shorts": {
+					"type": "Selection",
+					"range": "None/Compression Shorts/Compression Pants",
+					"comments": ""
+					},
+				"Shorts Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Leg": {
+					"type": "Selection",
+					"range": "None/Leg Sleeve/Calf Sleeve/Padded Calf Sleeve/Half Calf Sleeve/Half Calf Sleeve/Tape/Strap/Calf Band/Calf Sleeve Pad Retro",
+					"comments": ""
+					},
+				"Left Leg Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Knee": {
+					"type": "Selection",
+					"range": "None/Pad/Hex Pad/Brace/Sleeve/Strap/Short Sleeve/Tape/Angular Pad/Knee Pad Retro",
+					"comments": ""
+					},
+				"Left Knee Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Left Ankle": {
+					"type": "Selection",
+					"range": "None/Ankle Brace/Ankle Tape/Curry Ankle Brace",
+					"comments": ""
+					},
+				"Left Wrist Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Leg": {
+					"type": "Selection",
+					"range": "None/Leg Sleeve/Calf Sleeve/Padded Calf Sleeve/Half Calf Sleeve/Half Calf Sleeve/Tape/Strap/Calf Band/Calf Sleeve Pad Retro",
+					"comments": ""
+					},
+				"Right Leg Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Knee": {
+					"type": "Selection",
+					"range": "None/Pad/Hex Pad/Brace/Sleeve/Strap/Short Sleeve/Tape/Angular Pad/Knee Pad Retro",
+					"comments": ""
+					},
+				"Right Knee Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					},
+				"Right Ankle": {
+					"type": "Selection",
+					"range": "None/Ankle Brace/Ankle Tape/Curry Ankle Brace",
+					"comments": ""
+					},
+				"Right Wrist Frequency": {
+					"type": "Selection",
+					"range": "Always/Often/Sometimes/Rarely/Never",
+					"comments": ""
+					}
+				}
+		}
+	},
+	"Attributes": {
+		"sources": ["https://www.2kratings.com"],
+		"comments": "Take these stats from 2kratings website, while entering player name inside url like this: https://www.2kratings.com/{first name}-{last name}. If cannot find Durability stats you can give it under 'Overall Durability'",
+		"params": {
+			"Offense": {
+				"Driving Layup": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Post Fade": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Post Hook": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Post Control": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Draw Foul": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Close Shot": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Mid-Range Shot": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Three-Point Shot": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Free Throw": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Ball Handle": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Pass IQ": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Standing Dunk": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Driving Dunk": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Shot IQ": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Pass Vision": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Hands": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					}
+				},
+			"Defense": {
+				"Defensive Rebound": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Interior Defense": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Perimeter Defense": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Block": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Steal": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					}
+				},
+			"Athleticism": {
+				"Lateral Quickness": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Speed": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Speed With Ball": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Acceleration": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Vertical": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Strength": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Stamina": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Hustle": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					}
+				},
+			"Durability": {
+				"Head Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Neck Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Back Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Left Shoulder Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Right Shoulder Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Left Elbow Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Right Elbow Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Left Hip Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Right Hip Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Left Knee Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Right Knee Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Left Ankle Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Right Ankle Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Left Foot Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Right Foot Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Miscellaneous Durability": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					}
+				},
+			"Mental": {
+				"Pass Perception": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Defensive Consistency": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Help Defense IQ": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Offensive Consistency": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					}
+				},
+			"Misc": {
+				"Intangibles": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					},
+				"Potential": {
+					"type": "Integer",
+					"range": "25-99",
+					"comments": ""
+					}
+				}
+		}
+	},
+	"Tendencies": {
+		"sources": [],
+		"comments": "Generate it as real as you can; Use current 2k players as references",
+		"params": {
+			"Jump Shooting": {
+				"Step Through Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Under Basket": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Close": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Close Left": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Close Middle": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Close Right": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Spot Up Shot Mid-Range": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Off Screen Shot Mid-Range": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Mid Left": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Mid Left-Center": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Mid Center": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Mid Right-Center": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Mid Right": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Spot Up Shot Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Off Screen Shot Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Three Left": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Three Left-Center": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Three Center": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Three Right-Center": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shot Three Right": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Contested Jumper Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Contested Jumper Mid-Range": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Stepback Jumper Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Stepback Jumper Mid-Range": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Spin Jumper": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Transition Pull Up Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Drive Pull Up Three": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Drive Pull Up Mid-Range": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Use Glass": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Layups and Dunks": {
+				"Driving Layups": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Standing Dunk": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Dunk": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Flashy Dunk": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Alley-Oop": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Putback": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Crash": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Spin Layup": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Hop Step Layup": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Euro Step Layup": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Floater": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Drive Setup": {
+				"Triple Threat Pump Fake": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Triple Threat Jab Step": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Triple Threat Idle": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Triple Threat Shoot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Setup With Sizeup": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Setup With Hesitation": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"No Setup Dribble": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Driving": {
+				"Drive": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Spot Up Drive": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Off Screen Drive": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Drive Right": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Drive Crossover": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Spin": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Step Back": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Half Spin": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Double Crossover": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Behind the Back": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving Dribble Hesitation": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Driving In and Out": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"No Driving Dribble Move": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Attack Strong on Drive": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Passing": {
+				"Dish To Open Man": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Flashy Pass": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Alley-Oop Pass": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Post Game": {
+				"Post Up": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Shimmy Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Face Up": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Back Down": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Aggressive Backdown": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Shoot From Post": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Hook Left": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Hook Right": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Fade Left": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Fade Right": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Up and Under": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Hop Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Step Back Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Drive": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Spin": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Drop Step": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Post Hop Step": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Freelance": {
+				"Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Touches": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Roll vs. Pop": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Transition Spot Up": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Iso vs. Elite Defender": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Iso vs. Good Defender": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Iso vs. Average Defender": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Iso vs. Poor Defender": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Play Discipline": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				},
+			"Defense": {
+				"Pass Interception": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Take Charge": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"On-Ball Steal": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Contest Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Block Shot": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Foul": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					},
+				"Hard Foul": {
+					"type": "Integer",
+					"range": "0-100",
+					"comments": ""
+					}
+				}
+		}
+	},
+	"Badges": {
+		"sources": ["https://www.2kratings.com"],
+		"comments": "Take these stats from 2kratings website, while entering player name inside url like this: https://www.2kratings.com/{first name}-{last name}. If founded badge no exist in 'params' convert it to the matching one or ignore",
+		"params": {
+			"Inside Scoring": {
+				"Acrobat": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Aerial Wizard": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Backdown Punisher": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Dream Shake": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Dropstepper": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Fast Twitch": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Fearless Finisher": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Giant Slayer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Masher": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Post Spin Technician": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Posterizer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Pro Touch": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Rise Up": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Slithery": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Bunny": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Float Game": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Hook Specialist": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Precision Dunker": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Scooper": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Spin Cycle": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Two Step": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Whistle": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					}
+				},
+			"Outside Scoring": {
+				"Agent 3": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Blinders": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Catch & Shoot": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Claymore": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Comeback Kid": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Corner Specialist": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Deadeye": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Green Machine": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Guard Up": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Limitless Range": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Middy Magician": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Slippery Off-Ball": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Space Creator": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Free Points": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Open Looks": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Post Fade Phenom": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Spot Finder": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					}
+				},
+			"Playmaking": {
+				"Ankle Breaker": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Bail Out": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Break Starter": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Dimer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Handles For Days": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Hyperdrive": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Killer Combos": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Needle Threader": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Post Playmaker": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Special Delivery": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Unpluckable": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Big Driver": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Blow-By": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Physical Handles": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Relay Passer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Speed Booster": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Touch Passer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Triple Strike": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					}
+				},
+			"Defending": {
+				"Anchor": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Ankle Braces": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Challenger": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Chase Down Artist": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Clamps": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Glove": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Interceptor": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Off-Ball Pest": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Pick Dodger": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Post Lockdown": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Pogo Stick": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Work Horse": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Fast Feet": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Right Stick Ripper": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					}
+				},
+			"Athleticism": {
+				"Brick Wall": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Bulldozer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Immovable Enforcer": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"C94 Feet": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					}
+				},
+			"Rebounding": {
+				"Boxout Beast": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Rebound Chaser": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					}
+				},
+			"Personality": {
+				"Work Ethic": {
+					"type": "Selection",
+					"range": "Unequipped/Bronze/Silver/Gold/Hall of Fame",
+					"comments": ""
+					},
+				"Reserved": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Friendly": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Team Player": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Extremely Confident": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Keep It Real": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Pat My Back": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Expressive": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Unpredictable": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Laid Back": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Media Ringmaster": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Warm Weather Fan": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Finance Savvy": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Alpha Dog": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					},
+				"Enforcer": {
+					"type": "Boolean",
+					"range": "Unequipped/Equipped",
+					"comments": ""
+					}
+				}
+		}
+	},
+	"Hot Zones": {
+		"sources": ["https://www.2kratings.com"],
+		"comments": "Take these stats from 2kratings website, while entering player name inside url like this: https://www.2kratings.com/{first name}-{last name}",
+		"params": {
+			"Under Basket": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Close Left": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Close Middle": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Mid-Range Left": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Mid-Range Left-Center": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Mid-Range Center": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Mid-Range Right-Center": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Mid-Range Right": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Three Left": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Three Left-Center": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Three Center": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Three Right-Center": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				},
+			"Three Right": {
+				"type": "Selection",
+				"range": "Neutral/Hot/Cold",
+				"comments": ""
+				}
+		}
+	}
+}
