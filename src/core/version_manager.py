@@ -5,7 +5,7 @@ from src.utils.instructions import get_instructions_versions_list, load_instruct
 
 
 class VersionManager:
-    instructions: dict
+    instructions: Optional[dict]
     versions: list[str]
     departments: list[str]
 
